@@ -13,5 +13,6 @@ before_script:
 
 script:
   - ng build
-  - ng test
-  - ng e2e
+  - ng lint
+  - ng test --watch=false --progress=false --browsers=ChromeHeadlessCI
+  - ng e2e --protractor-config=./e2e/protractor-ci.conf.js
