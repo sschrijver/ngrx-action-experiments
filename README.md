@@ -1,27 +1,12 @@
 # NgrxActionsExperiments
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 6.0.8.
+## The problem
+We're using the ngrx-actions library for defining our NgRx actions, effects, stores and reducers.  
+The problem with NgRx in generally is that you have to write a lot of boilerplate code, ngrx-actions makes this a little bit better.  
+  
+Assume that we have one page in our dashboard that needs to receive a few statistics over a few departments.  
+All statistics are the same, but the API call in the back only differs by one parameter: department.  
+You'll end up by creating a (for example) FETCH-[DEPARTMENT]-EMPLOYEES-state SET-[DEPARTMENT]-EMPLOYEES for every single department,  
+whilst the underlying logic is almost the same, causing lots of code duplicates.  
 
-## Development server
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
-
-## Code scaffolding
-
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
