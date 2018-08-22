@@ -15,11 +15,11 @@ import {environment} from "../environments/environment";
   ],
   imports: [
     BrowserModule,
-    StoreModule.forRoot(null),
-    NgrxActionsModule,
-    EffectsModule.forRoot([]),
-    StoreRouterConnectingModule,
-    !environment.production ? StoreDevtoolsModule.instrument() : []
+    // StoreModule.forRoot(),
+    // NgrxActionsModule,
+    // EffectsModule.forRoot([]),
+    // StoreRouterConnectingModule,
+    // !environment.production ? StoreDevtoolsModule.instrument() : []
 
   ],
   providers: [],
